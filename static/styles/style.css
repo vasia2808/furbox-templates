@@ -1,75 +1,74 @@
+:root {
+    --bg: #191319;
+    --header-bg: #282127;
+    --button: #bf423e;
+    --brand: #cb4a45;
+    --brand-hover: color-mix(var(--brand) 70%, transparent);
+    --text: #c9c9c9;
+    --nav-link: #c9c9c9;
+    --nav-link-hover: color-mix(var(--nav-link) 70%, transparent);
+    --placeholder: color-mix(var(--text) 45%, transparent);
+
+    --border-width: 2px;
+    --border-radius: 5px;
+}
+
 body {
-    background-color: #191319;
+    background-color: var(--bg);
 }
 
 header {
-    background-color: #282127;
+    background-color: var(--header-bg);
 }
 
 .navbar-brand,
 .navbar-brand:focus {
-    color: #cb4a45;
+    color: var(--brand);
     font-weight: bold;
 }
 
 .navbar-brand:hover {
-    color: #cb4a45;
-    opacity: 0.7;
+    color: var(--brand-hover);
 }
 
 .nav-link,
 .nav-link:focus {
-    color: #c0c0c0;
+    color: var(--nav-link);
 }
 
 .nav-link:hover {
-    color: #c0c0c0;
-    opacity: 0.7;
+    color: var(--nav-link-hover);
 }
 
 .search-input {
-    margin-top: auto;
-    margin-bottom: auto;
-    background-color: #191319;
-    color: #c0c0c0;
+    background-color: var(--bg);
+    color: var(--text);
     border-width: 0;
-    border-radius: 5px;
-    border-color: rgba(216, 216, 216, 0.55);
 }
 
 .search-input:focus {
-    background-color: #191319;
-    color: #c0c0c0;
+    background-color: var(--bg);
+    color: var(--text);
     box-shadow: none;
 }
 
 .search-input::placeholder {
-    color: rgba(216, 216, 216, 0.45);
+    color: var(--placeholder);
 }
 
 .search-button {
     --bs-btn-padding-y: .25em;
     --bs-btn-padding-x: .7em;
-    border-width: 2px;
-    border-radius: 5px;
-    border-color: #bf423e;
-    color: #bf423e;
+    border-width: var(--border-width);
+    border-radius: var(--border-radius);
+    border-color: var(--button);
+    color: var(--button);
     font-weight: bold;
 }
 
 .search-button:hover,
 .search-button:active:focus {
-    border-color: #bf423e;
-    background-color: #bf423e;
-    color: #282127;
-}
-
-@media (max-width: 767px) {
-    .navbar-collapse {
-        padding-bottom: 0.6em;
-    }
-
-    .nav-item:last-child {
-        padding-bottom: 0.5em;
-    }
+    border-color: var(--button);
+    background-color: var(--button);
+    color: var(--header-bg);
 }
