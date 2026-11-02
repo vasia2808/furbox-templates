@@ -3,10 +3,10 @@
     --text: #c9c9c9;
     --accent: #cb4a45;
     --accent-link-hover: color-mix(var(--accent) 70%, transparent);
+    --button: #bf423e;
     --scrollbar-color: color-mix(var(--text) 70%, transparent) transparent;
 
     --header-bg: #282127;
-    --button: #bf423e;
     --brand-hover: color-mix(var(--accent) 70%, transparent);
     --nav-link: #c9c9c9;
     --nav-link-hover: color-mix(var(--nav-link) 70%, transparent);
@@ -141,15 +141,46 @@ header {
     background-color: var(--product-list-bg);
     border-radius: var(--border-radius);
 
-    h5 {
-        color: var(--accent);
-        font-weight: bold;
-    }
-
     hr {
         margin-top: 0.3rem;
         border-width: 0.15rem;
         color: var(--text);
+    }
+}
+
+.product-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h5 {
+        color: var(--accent);
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+}
+
+.product-list-controls {
+    display: flex;
+    gap: 0.5rem;
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        border: none;
+        border-radius: var(--border-radius);
+        background-color: var(--card-bg);
+        color: var(--button);
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: var(--accent);
+            color: var(--product-list-bg);
+        }
     }
 }
 
