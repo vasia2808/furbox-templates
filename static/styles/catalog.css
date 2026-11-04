@@ -1,0 +1,45 @@
+:root {
+    --card-bg: #3a2f39;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    border-width: 0;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-body {
+    width: 300%;
+}
+
+.card-title {
+    font-weight: bold;
+    text-decoration: none;
+
+    h5 {
+        color: var(--accent);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+
+        &:hover {
+            color: var(--accent-link-hover);
+        }
+    }
+}
+
+.card-text {
+    color: var(--text);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
