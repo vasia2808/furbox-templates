@@ -82,7 +82,7 @@ header {
     }
 }
 
-.search-button {
+.btn-outline-primary {
     --bs-btn-padding-y: 0.25rem;
     --bs-btn-padding-x: 0.7rem;
     border-width: var(--border-width);
@@ -90,13 +90,13 @@ header {
     border-color: var(--button);
     color: var(--button);
     font-weight: bold;
-}
 
-.search-button:hover,
-.search-button:active:focus {
-    border-color: var(--button);
-    background-color: var(--button);
-    color: var(--header-bg);
+    &:hover,
+    &:active:focus {
+        border-color: var(--button);
+        background-color: var(--button);
+        color: var(--header-bg);
+    }
 }
 
 /* Footer */
