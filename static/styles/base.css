@@ -1,6 +1,8 @@
 :root {
     --bg: #191319;
     --text: #c9c9c9;
+    --link: #c9c9c9;
+    --link-hover: color-mix(var(--link) 70%, transparent);
     --accent: #cb4a45;
     --accent-link-hover: color-mix(var(--accent) 70%, transparent);
     --button: #bf423e;
@@ -97,6 +99,10 @@ header {
         background-color: var(--button);
         color: var(--header-bg);
     }
+}
+
+img {
+    vertical-align: baseline;
 }
 
 /* Footer */
