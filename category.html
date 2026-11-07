@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/styles/base.css">
+    <link rel="stylesheet" href="static/styles/category.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="static/images/favicon/site.webmanifest">
+    <title>Heads - FurBox</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-dark py-1">
+            <div class="container-lg px-3">
+                <a class="navbar-brand" href="index.html">FurBox</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalog.html">Catalog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cart</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex my-2 my-md-0" role="search">
+                        <input class="form-control me-2 search-input" type="search" placeholder="Search..."
+                            aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-grow-1 py-3">
+        <div class="container-lg">
+            <section class="product-list">
+                <div class="product-list-header">
+                    <h5>Heads</h5>
+                    <form action="#" method="get" class="sort-form">
+                        <label for="sortMethod">Sort by:</label>
+                        <select class="form-select" id="sortMethod" name="sort_by" onchange="this.form.submit()" aria-label="Default select example">
+                            <option selected value="default">default</option>
+                            <option value="price_ascending">price (ascending)</option>
+                            <option value="price_descending">price (descending)</option>
+                        </select>
+                    </form>
+                </div>
+                <hr>
+                <div class="product-list-cards">
+                    <div class="card">
+                        <img src="static/images/products/leprardprint_cat_kemono_head_fursuit.webp" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <a href="product.html" class="card-title">
+                                <h5>LeopardPrint cat Kemono Head Fursuit</h5>
+                            </a>
+                            <p class="card-text">A leopard-print kemono-style cat fursuit head with a smooth, rounded
+                                shape, large expressive eyes, and spotted fur patterns, giving it a playful yet stylish
+                                look with a bold, wild appearance</p>
+                            <p class="card-price">$990</p>
+                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-check-fill.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/images/products/polka-dot_chocolate_caramel_mouse_toony_head_fursuit.webp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title">
+                                <h5>Polka-dot Chocolate Caramel Mousse Toony Head Fursuit</h5>
+                            </a>
+                            <p class="card-text">A chocolate caramel mousse toony-style fursuit head with exaggerated,
+                                expressive features, a mix of rich chocolate brown and creamy caramel fur, and a
+                                playful, cartoonish look that feels sweet and whimsical</p>
+                            <p class="card-price">$847</p>
+                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/images/products/calico_cat_kemono_head_fursuit.webp" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title">
+                                <h5>Calico Cat Kemono Head Fursuit</h5>
+                            </a>
+                            <p class="card-text">A calico cat kemono-style fursuit head with a smooth, rounded shape,
+                                large expressive eyes, and a patchwork of white, orange, and black fur, giving it a cute
+                                and lively appearance with a soft, stylized charm</p>
+                            <p class="card-price">$1180.40</p>
+                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/images/products/butterfly_dog_kemono_head_fursuit.webp" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title">
+                                <h5>Butterfly Dog Kemono Head Fursuit</h5>
+                            </a>
+                            <p class="card-text">A butterfly dog kemono-style fursuit head with a smooth, rounded shape,
+                                large expressive eyes, and delicate butterfly-like markings in soft pastel hues, giving
+                                it a whimsical, ethereal appearance with a gentle, dreamy charm</p>
+                            <p class="card-price">$2050</p>
+                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/images/products/blue_white_kitten_kemono_head_fursuit.webp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title">
+                                <h5>Blue White kitten Kemono Head Fursuit</h5>
+                            </a>
+                            <p class="card-text">A blue-and-white kitten kemono-style fursuit head with a smooth,
+                                rounded shape, large expressive eyes, and soft two-tone fur, giving it a cute,
+                                cool-toned appearance with a sweet and playful charm</p>
+                            <p class="card-price">$904.02</p>
+                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/images/products/wolf_head.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title">
+                                <h5>Dark Wolf Head</h5>
+                            </a>
+                            <p class="card-text">A dark-furred wolf furry head with piercing red eyes, featuring a
+                                sleek, shadowy coat and an intense, mysterious gaze</p>
+                            <p class="card-price">$300</p>
+                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-check-fill.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/images/products/fursuit_husky_fox_mascot_head.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title">
+                                <h5>Fursuit Husky Fox Mascot</h5>
+                            </a>
+                            <p class="card-text">A white-furred wolf furry head with bright blue eyes, featuring a soft,
+                                snowy coat and a calm, striking gaze</p>
+                            <p class="card-price">$347</p>
+                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/images/products/handmade_furry_fursuit_head.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title">
+                                <h5>Handmade Furry Fursuit Head</h5>
+                            </a>
+                            <p class="card-text">A brown-and-white-furred wolf furry head with deep blue eyes, featuring
+                                a patched, earthy coat and a steady, thoughtful gaze</p>
+                            <p class="card-price">$1200</p>
+                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/images/products/fursuit_kigurumi_headset.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title">
+                                <h5>Fursuit Kigurumi Headset</h5>
+                            </a>
+                            <p class="card-text">A head set featuring pink ears, white fur with soft blue accents, and
+                                bright blue eyes, creating a sweet, cool-toned look with a playful contrast</p>
+                            <p class="card-price">$1430</p>
+                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/images/products/furry_cosplay_kigurumi_fursuit_head.avif" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title">
+                                <h5>Furry Cosplay Kigurumi Fursuit Head</h5>
+                            </a>
+                            <p class="card-text">A head set featuring blue ears, pink hair, and pink eyes, creating a
+                                bold, candy-colored contrast with a playful and vivid appearance</p>
+                            <p class="card-price">$1520</p>
+                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/images/products/milk_coffee_lamb_kemono_head_fursuit.webp" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title">
+                                <h5>Milk Coffee Lamb Kemono Head Fursuit</h5>
+                            </a>
+                            <p class="card-text">A brown-and-white lamb head set featuring soft, fluffy fur, rounded
+                                ears, and gentle eyes, creating a cozy, cuddly look with a warm two-tone appearance</p>
+                            <p class="card-price">$2220</p>
+                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/images/products/purple_sweet_cool_fox_wolf_kemono_fursuit_head.webp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title">
+                                <h5>Purple Sweet Cool Fox Wolf Kemono Fursuit Head</h5>
+                            </a>
+                            <p class="card-text">A fox head featuring a soft blend of white, pink, and purple fur, with
+                                pointed ears and a gentle, whimsical expression that gives it a sweet, pastel-colored
+                                charm</p>
+                            <p class="card-price">$3320</p>
+                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pagination-container">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container-lg px-3 py-2 text-center">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4">
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#" class="footer-link">
+                                News
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">
+                                About us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#" class="footer-link">Delivery and Payment</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Warranty and Service</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <ul class="footer-list d-flex justify-content-center">
+                        <li>
+                            <a href="#" class="footer-link">
+                                <img src="static/images/footer_links/telegram.svg" alt="Telegram"
+                                    class="footer-link-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">
+                                <img src="static/images/footer_links/instagram.svg" alt="Instagram"
+                                    class="footer-link-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">
+                                <img src="static/images/footer_links/youtube.svg" alt="YouTube" class="footer-link-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

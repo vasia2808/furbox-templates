@@ -172,7 +172,7 @@
 .disabled .page-link {
     background-color: var(--pagination-bg);
     border-color: var(--pagination-border);
-    color: var(--pagination-link);
+    color: var(--pagination-link-hover);
 }
 
 .product-list {
@@ -304,8 +304,8 @@
 
 .card .card-cart {
     position: absolute;
-    right: 1.2rem;
-    bottom: 1.2rem;
+    right: 1rem;
+    bottom: 0.7rem;
 
     img {
         width: 1.8rem;
