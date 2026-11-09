@@ -1,0 +1,16 @@
+:root {
+    --login-bg: #282127;
+}
+
+.login {
+    max-width: 500px;
+    margin-inline: auto;
+    background-color: var(--login-bg);
+    color: var(--text);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+
+    h2 {
+        color: var(--accent);
+    }
+}

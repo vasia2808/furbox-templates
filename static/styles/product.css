@@ -90,12 +90,6 @@
     >h5 {
         color: var(--accent);
     }
-
-    >hr {
-        margin-top: 0.3rem;
-        border-width: 0.15rem;
-        color: var(--text);
-    }
 }
 
 .review {

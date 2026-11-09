@@ -42,12 +42,6 @@
     padding: 0.7rem;
     background-color: var(--product-list-bg);
     border-radius: var(--border-radius);
-
-    hr {
-        margin-top: 0.3rem;
-        border-width: 0.15rem;
-        color: var(--text);
-    }
 }
 
 .product-list-header {

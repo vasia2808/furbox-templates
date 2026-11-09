@@ -1,0 +1,16 @@
+:root {
+    --registration-bg: #282127;
+}
+
+.registration {
+    max-width: 500px;
+    margin-inline: auto;
+    background-color: var(--registration-bg);
+    color: var(--text);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+
+    h2 {
+        color: var(--accent);
+    }
+}

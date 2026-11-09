@@ -70,7 +70,47 @@ header {
     }
 }
 
-.search-input {
+/* Footer */
+
+footer {
+    background-color: var(--footer-bg);
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        margin: 0.4rem;
+    }
+}
+
+.footer-link {
+    color: var(--footer-link);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--footer-link-hover);
+    }
+}
+
+.footer-link-img {
+    width: 3rem;
+}
+
+/* UI Elements */
+
+.underline-link {
+    text-decoration: underline;
+    color: var(--link);
+
+    &:hover {
+        color: var(--link-hover)
+    }
+}
+
+.input {
     background-color: var(--bg);
     color: var(--text);
     border-width: 0;
@@ -103,41 +143,35 @@ header {
     }
 }
 
+.btn-outline-white {
+    --bs-btn-padding-y: 0.25rem;
+    --bs-btn-padding-x: 0.7rem;
+    border-width: var(--border-width);
+    border-radius: var(--border-radius);
+    border-color: var(--text);
+    color: var(--text);
+    font-weight: bold;
+
+    &:hover,
+    &:active:focus {
+        border-color: var(--text);
+        background-color: var(--text);
+        color: var(--header-bg);
+    }
+}
+
 img {
     vertical-align: baseline;
 }
 
 .custom-tooltip {
-  --bs-tooltip-bg: var(--tooltip-bg);
-  --bs-tooltip-color: var(--text);
-  --bs-tooltip-border-radius: var(--border-radius); 
+    --bs-tooltip-bg: var(--tooltip-bg);
+    --bs-tooltip-color: var(--text);
+    --bs-tooltip-border-radius: var(--border-radius);
 }
 
-/* Footer */
-
-footer {
-    background-color: var(--footer-bg);
-}
-
-.footer-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-        margin: 0.4rem;
-    }
-}
-
-.footer-link {
-    color: var(--footer-link);
-    text-decoration: none;
-
-    &:hover {
-        color: var(--footer-link-hover);
-    }
-}
-
-.footer-link-img {
-    width: 3rem;
+hr {
+    margin-top: 0.3rem;
+    border-width: 0.15rem;
+    color: var(--text);
 }
