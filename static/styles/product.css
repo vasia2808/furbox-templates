@@ -82,6 +82,7 @@
 
 .reviews {
     margin-top: 1rem;
+    scroll-margin-top: var(--header-height);
     padding: 0.7rem;
     background-color: var(--reviews-bg);
     border-radius: var(--border-radius);

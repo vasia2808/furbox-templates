@@ -114,7 +114,7 @@
                                     <img src="static/images/rating/star-fill.svg" alt="">
                                     <span>4.5/5</span>
                                 </div>
-                                <a class="comment-count" href="#">
+                                <a class="comment-count" href="#reviews">
                                     <img src="static/images/product/comments-fill.svg" alt="">
                                     <span>54</span>
                                 </a>
@@ -125,16 +125,18 @@
                                 look with a bold, wild appearance.
                             </p>
                             <div class="d-flex gap-3 align-items-end">
-                                <a href="#" class="add-to-wishlist"><img src="static/images/product/heart.svg"
-                                        alt=""></a>
-                                <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
-                                        alt=""></a>
+                                <a href="#" class="add-to-wishlist" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-custom-class="custom-tooltip" data-bs-title="Add to wishlist"><img
+                                        src="static/images/product/heart.svg" alt=""></a>
+                                <a href="#" class="card-cart" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Add to cart" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-custom-class="custom-tooltip" data-bs-title="Add to cart"><img
+                                        src="static/images/product-card/cart-plus-fill.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </article>
-            <section class="reviews">
+            <section class="reviews" id="reviews">
                 <h5>Reviews</h5>
                 <hr>
                 <div class="review-list">
@@ -303,7 +305,7 @@
                                 expressive features, a mix of rich chocolate brown and creamy caramel fur, and a
                                 playful, cartoonish look that feels sweet and whimsical</p>
                             <p class="card-price">$847</p>
-                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
+                            <a href="#" class="card-cart" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Add to cart"><img src="static/images/product-card/cart-plus-fill.svg"
                                     alt=""></a>
                         </div>
                     </div>
@@ -316,7 +318,7 @@
                             <p class="card-text">A head set featuring pink ears, white fur with soft blue accents, and
                                 bright blue eyes, creating a sweet, cool-toned look with a playful contrast</p>
                             <p class="card-price">$1430</p>
-                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
+                            <a href="#" class="card-cart" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Add to cart"><img src="static/images/product-card/cart-plus-fill.svg"
                                     alt=""></a>
                         </div>
                     </div>
@@ -330,7 +332,7 @@
                             <p class="card-text">A head set featuring blue ears, pink hair, and pink eyes, creating a
                                 bold, candy-colored contrast with a playful and vivid appearance</p>
                             <p class="card-price">$1520</p>
-                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
+                            <a href="#" class="card-cart" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Add to cart"><img src="static/images/product-card/cart-plus-fill.svg"
                                     alt=""></a>
                         </div>
                     </div>
@@ -344,7 +346,7 @@
                             <p class="card-text">A brown-and-white lamb head set featuring soft, fluffy fur, rounded
                                 ears, and gentle eyes, creating a cozy, cuddly look with a warm two-tone appearance</p>
                             <p class="card-price">$2220</p>
-                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
+                            <a href="#" class="card-cart" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Add to cart"><img src="static/images/product-card/cart-plus-fill.svg"
                                     alt=""></a>
                         </div>
                     </div>
@@ -359,7 +361,7 @@
                                 pointed ears and a gentle, whimsical expression that gives it a sweet, pastel-colored
                                 charm</p>
                             <p class="card-price">$3320</p>
-                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
+                            <a href="#" class="card-cart" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Add to cart"><img src="static/images/product-card/cart-plus-fill.svg"
                                     alt=""></a>
                         </div>
                     </div>
@@ -374,7 +376,7 @@
                                 large expressive eyes, and soft dark fur, giving it a cute yet mysterious look with a
                                 sleek, stylized appearance</p>
                             <p class="card-price">$1060</p>
-                            <a href="#" class="card-cart"><img src="static/images/product-card/cart-plus-fill.svg"
+                            <a href="#" class="card-cart" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Add to cart"><img src="static/images/product-card/cart-plus-fill.svg"
                                     alt=""></a>
                         </div>
                     </div>
@@ -442,6 +444,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script>
+        const header = document.querySelector('header');
+
+        const observer = new ResizeObserver(entries => {
+            const height = entries[0].borderBoxSize[0].blockSize;
+
+            document.documentElement.style.setProperty(
+                '--header-height',
+                `calc(${height}px + 1rem)`
+            );
+        });
+
+        observer.observe(header);
+    </script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 
     <script>
         document.querySelectorAll('.product-list').forEach(list => {

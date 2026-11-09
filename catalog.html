@@ -216,6 +216,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script>
+        const header = document.querySelector('header');
+
+        const observer = new ResizeObserver(entries => {
+            const height = entries[0].borderBoxSize[0].blockSize;
+
+            document.documentElement.style.setProperty(
+                '--header-height',
+                `calc(${height}px + 1rem)`
+            );
+        });
+
+        observer.observe(header);
+    </script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 
 </html>

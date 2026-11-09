@@ -20,6 +20,8 @@
     --footer-bg: #282127;
     --footer-link: #c9c9c9;
     --footer-link-hover: color-mix(var(--footer-link) 70%, transparent);
+
+    --tooltip-bg: #282127;
 }
 
 * {
@@ -103,6 +105,12 @@ header {
 
 img {
     vertical-align: baseline;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--tooltip-bg);
+  --bs-tooltip-color: var(--text);
+  --bs-tooltip-border-radius: var(--border-radius); 
 }
 
 /* Footer */
