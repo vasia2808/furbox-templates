@@ -114,6 +114,7 @@ footer {
     background-color: var(--bg);
     color: var(--text);
     border-width: 0;
+    border-radius: var(--border-radius);
 
     &:focus {
         background-color: var(--bg);
@@ -123,6 +124,22 @@ footer {
 
     &::placeholder {
         color: var(--placeholder);
+    }
+
+    &::file-selector-button {
+        background-color: var(--bg);
+        color: var(--button);
+        border-width: var(--border-width);
+        border-top-left-radius: var(--border-radius);
+        border-bottom-left-radius: var(--border-radius);
+        border-color: var(--button);
+        font-weight: bold;
+    }
+
+    &:hover::file-selector-button {
+        border-color: var(--button);
+        background-color: var(--button) !important;
+        color: var(--bg);
     }
 }
 
