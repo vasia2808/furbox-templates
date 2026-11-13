@@ -144,6 +144,39 @@ footer {
     }
 }
 
+.radio {
+    background-color: var(--bg);
+    cursor: pointer;
+    border-color: var(--text);
+
+    &:checked {
+        border-color: var(--button);
+        background-color: var(--button);
+    }
+
+    &:focus {
+        border-color: var(--button);
+        box-shadow: none;
+    }
+}
+
+.text-area {
+    background-color: var(--bg);
+    color: var(--text);
+    border-width: 0;
+    border-radius: var(--border-radius);
+
+    &:focus {
+        background-color: var(--bg);
+        color: var(--text);
+        box-shadow: none;
+    }
+
+    &::placeholder {
+        color: var(--placeholder);
+    }
+}
+
 .btn-outline-primary {
     --bs-btn-padding-y: 0.25rem;
     --bs-btn-padding-x: 0.7rem;
